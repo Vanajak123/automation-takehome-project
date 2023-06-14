@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "build": "tsc",
+    "start": "npm run build && node build/src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.35.0"
+    "@playwright/test": "^1.35.0",
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
   },
   "dependencies": {
     "playwright": "^1.35.0"
